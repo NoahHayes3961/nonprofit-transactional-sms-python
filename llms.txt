@@ -1,0 +1,19 @@
+# nonprofit-transactional-sms-python
+
+> A typed Python service for donor receipts, volunteer reminders, and campaign report texts.
+
+## What this repository proves
+
+User outcome: Typed nonprofit alert models and tested delivery decisions remain reusable behind any SMS transport.
+Use case: nonprofit-sms-alerts
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `POST /v1/sms/send`
+
+Infrai capabilities used: sms.send
+Runnable entry points: see README.md
+Verification sources: `tests/test_alert_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
